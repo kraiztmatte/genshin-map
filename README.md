@@ -1,57 +1,59 @@
-# 【空荧酒馆】提瓦特电子地图•最新版
-## 食用方法：
+# [Kongying Tavern] Tivat Electronic Map•The latest version
 
-①点击右侧按钮唤出筛选器
+## How to use:
 
-②每种物品都有【序号id】，方便查缺补漏，可单击标记查看备注
+1. Click the button on the right to call up the filter
 
-③每种物品都可进行【标记】，方便旅行者标记已经获取过的物品
+2. Each item has a [serial number id], which is convenient for checking deficiencies, and you can click the mark to view the remarks
 
-③宝箱有对应【图片】，妈妈再也不用担心找不到宝箱了（蒙德部分宝箱没有图片，可能由于没有截图或者点位不准，请以公测为准）
+3. Each item can be [marked], which is convenient for travelers to mark the items that have been acquired
 
-④当前针对PC优化，手机端也许会有一些意想不到的新(B)特(U)性(G)
+4. There is a corresponding [picture] for the treasure chest. Mom no longer has to worry about finding the treasure chest. (Some treasure chests in Mond have no pictures. It may be because there is no screenshot or the position is inaccurate. Please refer to the public beta)
 
-⑤如果各位旅行者发现了问题，可以[【点击这里并简述问题】](https://docs.qq.com/sheet/DSm9jV29kcFVHdVZL?tab=BB08J2)
+5. Currently optimized for PC, there may be some unexpected new (B) features (U) features (G) on the mobile phone.
 
-制作：A8、大白米、Icarusss、南极风
-![实例](https://upload-bbs.mihoyo.com/upload/2020/09/09/5284717/58b1e0a88e58bed8ddfc3bd34b439b75_259109571177980462.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
-![实例](https://upload-bbs.mihoyo.com/upload/2020/09/19/5284717/3f2f022e016c245b43939b50d6a43de3_2462893354478986890.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
-![实例](https://upload-bbs.mihoyo.com/upload/2020/09/19/5284717/3947428880da5f99e329198c3d779e4c_6341180947935966441.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
-![实例](https://upload-bbs.mihoyo.com/upload/2020/09/26/5284717/82ae121d6c53ad415f69f2315724d14f_1311956324983884438.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
-# 更新日志：
+6. If travelers find a problem, you can [[click here and briefly describe the problem]](https://docs.qq.com/sheet/DSm9jV29kcFVHdVZL?tab=BB08J2)
 
->9/27 再次更新了一大波宝箱点位，校准了部分琉璃袋点位及配图
+Production: A8, white rice, Icarusss, Antarctic wind
+![Instance](https://upload-bbs.mihoyo.com/upload/2020/09/09/5284717/58b1e0a88e58bed8ddfc3bd34b439b75_259109571177980462.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
+![Instance](https://upload-bbs.mihoyo.com/upload/2020/09/19/5284717/3f2f022e016c245b43939b50d6a43de3_2462893354478986890.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
+![Instance](https://upload-bbs.mihoyo.com/upload/2020/09/19/5284717/3947428880da5f99e329198c3d779e4c_6341180947935966441.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
+![Instance](https://upload-bbs.mihoyo.com/upload/2020/09/26/5284717/82ae121d6c53ad415f69f2315724d14f_1311956324983884438.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg)
 
->9/26 更新了一大波宝箱点位
+# Update log:
 
->9/25 更新了点击点位的弹窗样式，现在可以点击隐藏图片了，没有图片的点位不会显示？图片了
+> 9/27 updated a large wave of treasure chest points again, and calibrated some of the glass bag points and pictures
 
->9/22 更新了琉璃袋、琉璃百合及部分璃月宝箱点位
+> 9/26 updated a large wave of treasure chest points
 
->9/20 更新了部分宝箱位置和图片
+> 9/25 updated the pop-up window style of clicking points. Now you can click to hide pictures. Points without pictures will not be displayed? Pictured
 
->9/19 更新了新版筛选器，放大了神瞳，优化了点位样式，现在已获取的物品显示更明显了，校准了岩神瞳位置并更新了岩神瞳图片信息
+> 9/22 updated the location of the colored glaze bag, colored lily and some glaze chests
 
->9/15 更新了地图底图到正式服，更新了风神瞳、岩神瞳点位到正式服
+> 9/20 updated some treasure chest locations and pictures
 
->9/14 修复了一些BUG，PC端现在默认开启筛选器了。
+> 9/19 updated the new version of the filter, enlarged the pupils, optimized the position style, now the obtained items are displayed more clearly, the position of the pupils of Iwasaki has been calibrated and the picture information of the pupils of the Iwasaki has been updated
 
->9/09 重制了筛选器样式，优化了网页源码，添加了璃月宝箱，添加了宝箱图片，添加了标记功能
+> 9/15 updated the map base map to the official server, and updated the Fengshen pupil and Iwashen pupil points to the official server
 
->7/17 添加、删除了部分璃月精英怪位置，添加了蒙德宝箱位置
+> 9/14 fixed some bugs, now the filter is enabled by default on the PC side.
 
->7/07 更新璃月精英怪位置，给图标加上了边框
+> 9/09 Reworked the filter style, optimized the source code of the webpage, added Liyue Treasure Box, added Treasure Box pictures, and added the marking function
 
->6/30 更新最后一个岩神瞳位置
+> 7/17 Added or deleted some Liyue elite monster positions, and added the Mond treasure chest position
 
->6/29 更新蒙德水晶矿、蒙德白铁矿位置
+> 7/07 Updated the position of Liyue Elite Monster and added a border to the icon
 
->6/28 更新璃月水晶矿、璃月白铁矿位置
+> 6/30 Update the last Iwagami Hitomi position
 
->6/23 更新钩钩果、嘟嘟莲、落落梅、风车菊、塞西莉亚花、慕风蘑菇、蒲公英籽、夜泊石、石珀位置
+> 6/29 Update the location of Mond Crystal Mine and Mond Marcasite
 
->6/20 优化网页代码，更新菜单样式
+> 6/28 Update the location of Liyue Crystal Mine and Liyue White Iron Mine
 
->6/18 更新绝云椒椒、霓裳花、琉璃百合位置
+> 6/23 Updated the positions of Gouguo, Dudulian, Luoluomei, Pinwheel Chrysanthemum, Cecilia Flower, Mufeng Mushroom, Dandelion Seed, Yeboshi, and Amber
 
->6/16 更新蒙德、璃月全20个地灵龛位置
+> 6/20 Optimize webpage code, update menu style
+
+> 6/18 Updated the locations of Jueyunjiao, Neon Flower, and Liulili
+
+> 6/16 updated the locations of all 20 niches in Mond and Riyue
