@@ -26,333 +26,335 @@
 
   <body>
     <div id="map"></div>
-    <div class="danjixiazai"></div>
-    <!-- 筛选器 -->
+    <!-- <div class="danjixiazai"></div> -->
+    <!-- Filter -->
     <div class="control-containor">
       <img class="Background" src="imgs/con_img/Content.png" />
       <a href="javascript:;" class="fold-btn hd">fold</a>
       <div class="person-div">
-        <a href="javascript:;" class="reg_log_link hd">登录/注册</a>
-        <a href="javascript:;" class="save-btn disable hd">存档</a>
+        <!-- <a href="javascript:;" class="reg_log_link hd">Log in / Register</a> -->
+        <a href="shangchuan.html">upload saved marker</a>
+        <a href="javascript:;" class="save-btn disable hd">Archive</a>
       </div>
       <div class="topLine"></div>
-      <!-- 筛选器左侧页签 -->
+      <!-- The Right tab of the filter -->
       <ul class="con-type-label-containor">
-        <li class="con-type-label lable1" i_type="TX">特性</li>
-        <li class="con-type-label lable2" i_type="TC">特产</li>
-        <li class="con-type-label lable3" i_type="KW">矿物</li>
-        <li class="con-type-label lable4" i_type="GW">怪物</li>
-        <li class="con-type-label lable5" i_type="SC">食材</li>
-        <li class="con-type-label lable6" i_type="LJ">炼金</li>
+        <li class="con-type-label lable1" i_type="TX">Property</li>
+        <li class="con-type-label lable2" i_type="TC">Speciality</li>
+        <li class="con-type-label lable3" i_type="KW">Mineral</li>
+        <li class="con-type-label lable4" i_type="GW">Monster</li>
+        <li class="con-type-label lable5" i_type="SC">Ingredient</li>
+        <li class="con-type-label lable6" i_type="LJ">Alchemy</li>
       </ul>
-      <!-- 筛选器上侧地区分类 -->
+      <!-- Filter upper side area classification -->
       <ul class="area-list-containor">
         <a href="javascript:;" class="area-list-li-containor on" i_area="MD">
-          <span class="area-text">蒙德</span>
+          <span class="area-text">Mondst</span>
           <span class="area-img mengde on hd">area-img</span>
         </a>
         <a href="javascript:;" class="area-list-li-containor off" i_area="LY">
-          <span class="area-text">璃月</span>
+          <span class="area-text">Liyue</span>
           <span class="area-img liyue hd off">area-img</span>
         </a>
+        <!-- <a href="javascript:;" class="area-list-li-containor off undone"> -->
         <a href="javascript:;" class="area-list-li-containor off undone">
-          <span class="area-text">稻妻</span>
+          <span class="area-text">Electro</span>
           <span class="area-img daoqi hd off">area-img</span>
         </a>
         <a href="javascript:;" class="area-list-li-containor off undone">
-          <span class="area-text">至冬</span>
+          <span class="area-text">Cyro</span>
           <span class="area-img zhidong hd off">area-img</span>
         </a>
         <a href="javascript:;" class="area-list-li-containor off undone">
-          <span class="area-text">须弥</span>
+          <span class="area-text">Nature</span>
           <span class="area-img xumi hd off">area-img</span>
         </a>
         <a href="javascript:;" class="area-list-li-containor off undone">
-          <span class="area-text">枫丹</span>
+          <span class="area-text">Hydro</span>
           <span class="area-img fengdan hd off">area-img</span>
         </a>
         <a href="javascript:;" class="area-list-li-containor off undone">
-          <span class="area-text">穆纳塔</span>
+          <span class="area-text">Pyro</span>
           <span class="area-img munata hd off">area-img</span>
         </a>
       </ul>
-      <!-- 筛选器下测已选项框体（占位元素，勿动） -->
+      <!-- Check the selected box under the filter (placeholder element, do not move) -->
       <ul class="selector-list-containor">
         <p style="display: none"></p>
-        <p class="selector-hint">尚未选择收集要素</p>
+        <p class="selector-hint">No collection selected</p>
       </ul>
-      <!-- 筛选器筛选列表以及筛选项 -->
+      <!-- filter list and filter items -->
       <div class="options-containor">
         <div class="options-list">
           <span class="Layer_FST map-opts" area="MD" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_0.png" class="map-opts-icon" alt="icon" />
             </div>
-            风神瞳
+            Anemoculus
           </span>
           <span class="Layer_YST map-opts" area="LY" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_1.png" class="map-opts-icon" alt="icon" />
             </div>
-            岩神瞳
+            Geoculus
           </span>
           <span class="Layer_DLK_MD map-opts" area="MD" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_2.png" class="map-opts-icon" alt="icon" />
             </div>
-            地灵龛-蒙德
+            Shrine Mondstadt
           </span>
           <span class="Layer_DLK_LY map-opts" area="LY" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_3.png" class="map-opts-icon" alt="icon" />
             </div>
-            地灵龛-璃月
+            Shrine Liyue
           </span>
           <span class="Layer_BX_MD map-opts" area="MD" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_26.png" class="map-opts-icon" alt="icon" />
             </div>
-            宝箱-蒙德
+            Treasure Box
           </span>
           <span class="Layer_BX_LY map-opts" area="LY" itemtype="TX">
             <div class="img-border">
               <img src="imgs/icon_27.png" class="map-opts-icon" alt="icon" />
             </div>
-            宝箱-璃月
+            Treasure Box
           </span>
           <span class="Layer_SJK_LY map-opts" area="LY" itemtype="KW">
             <div class="img-border">
               <img src="imgs/icon_16.png" class="map-opts-icon" alt="icon" />
             </div>
-            水晶矿-璃月
+            Crystal
           </span>
           <span class="Layer_BTK_LY map-opts" area="LY" itemtype="KW">
             <div class="img-border">
               <img src="imgs/icon_17.png" class="map-opts-icon" alt="icon" />
             </div>
-            白铁矿-璃月
+            White Iron
           </span>
           <span class="Layer_SJK_MD map-opts" area="MD" itemtype="KW">
             <div class="img-border">
               <img src="imgs/icon_18.png" class="map-opts-icon" alt="icon" />
             </div>
-            水晶矿-蒙德
+            Crystal
           </span>
           <span class="Layer_BTK_MD map-opts" area="MD" itemtype="KW">
             <div class="img-border">
               <img src="imgs/icon_19.png" class="map-opts-icon" alt="icon" />
             </div>
-            白铁矿-蒙德
+            White Iron
           </span>
           <span class="Layer_JYJJ map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_4.png" class="map-opts-icon" alt="icon" />
             </div>
-            绝云椒椒
+            Jueyun chili
           </span>
           <span class="Layer_NSH map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_5.png" class="map-opts-icon" alt="icon" />
             </div>
-            霓裳花
+            Silk Flower
           </span>
           <span class="Layer_LLBH map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_6.png" class="map-opts-icon" alt="icon" />
             </div>
-            琉璃百合
+            Glaze Lily
           </span>
           <span class="Layer_YPS map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_14.png" class="map-opts-icon" alt="icon" />
             </div>
-            夜泊石
+            Starconch
           </span>
           <span class="Layer_SP map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_15.png" class="map-opts-icon" alt="icon" />
             </div>
-            石珀
+            Cor Lapis
           </span>
           <span class="Layer_GGG map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_7.png" class="map-opts-icon" alt="icon" />
             </div>
-            钩钩果
+            Wolfhook
           </span>
           <span class="Layer_DDL map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_8.png" class="map-opts-icon" alt="icon" />
             </div>
-            嘟嘟莲
+            Snapdragon
           </span>
           <span class="Layer_LLM map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_11.png" class="map-opts-icon" alt="icon" />
             </div>
-            落落梅
+            Valberry
           </span>
           <span class="Layer_SXLYH map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_9.png" class="map-opts-icon" alt="icon" />
             </div>
-            塞西莉亚花
+            Cecillia
           </span>
           <span class="Layer_MFMG map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_10.png" class="map-opts-icon" alt="icon" />
             </div>
-            慕风蘑菇
+            Mu feng mushroom
           </span>
           <span class="Layer_FCJ map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_12.png" class="map-opts-icon" alt="icon" />
             </div>
-            风车菊
+            Windwheel Aster
           </span>
           <span class="Layer_PGYZ map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_13.png" class="map-opts-icon" alt="icon" />
             </div>
-            蒲公英籽
+            Dandelion seed
           </span>
           <span class="Layer_SYFS_MD map-opts" area="MD" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_31.png" class="map-opts-icon" alt="icon" />
             </div>
-            深渊法师-蒙德
+            Abyssal Mage
           </span>
           <span class="Layer_SYFS_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_24.png" class="map-opts-icon" alt="icon" />
             </div>
-            深渊法师-璃月
+            Abyssal Mage
           </span>
           <span class="Layer_LYSS_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_22.png" class="map-opts-icon" alt="icon" />
             </div>
-            雷莹术士-璃月
+            Fatui Electro mages
           </span>
           <span class="Layer_ZWCLR_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_23.png" class="map-opts-icon" alt="icon" />
             </div>
-            债务处理人-璃月
+            Fatui Pyro Agent
           </span>
           <span class="Layer_XQD_MD map-opts" area="MD" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_37.png" class="map-opts-icon" alt="icon" />
             </div>
-            先遣队-蒙德
+            Fatui Skirmisher
           </span>
           <span class="Layer_XQD_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_38.png" class="map-opts-icon" alt="icon" />
             </div>
-            先遣队-璃月
+            Fatui Skirmisher
           </span>
           <span class="Layer_PPH_MD map-opts" area="MD" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_35.png" class="map-opts-icon" alt="icon" />
             </div>
-            骗骗花-蒙德
+            Cyro WhopperFlower
           </span>
           <span class="Layer_PPH_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_36.png" class="map-opts-icon" alt="icon" />
             </div>
-            骗骗花-璃月
+            Cyro WhopperFlower
           </span>
           <span class="Layer_YYLX_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_39.png" class="map-opts-icon" alt="icon" />
             </div>
-            幼岩龙蜥-璃月
+            Geovishap Hatchling
           </span>
           <span class="Layer_YJSW_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_20.png" class="map-opts-icon" alt="icon" />
             </div>
-            遗迹守卫-璃月
+            Ruin Guard
           </span>
           <span class="Layer_YJSW_MD map-opts" area="MD" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_29.png" class="map-opts-icon" alt="icon" />
             </div>
-            遗迹守卫-蒙德
+            Ruin Guard
           </span>
           <span class="Layer_YJLZ_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_21.png" class="map-opts-icon" alt="icon" />
             </div>
-            遗迹猎者-璃月
+            Ruin Hunter
           </span>
           <span class="Layer_DBT_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_34.png" class="map-opts-icon" alt="icon" />
             </div>
-            盗宝团-璃月
+            Thieves Group
           </span>
           <span class="Layer_DXQQR_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_25.png" class="map-opts-icon" alt="icon" />
             </div>
-            大型丘丘人-璃月
+            Rock Shieldwall Mitachurl
           </span>
           <span class="Layer_LLD map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_28.png" class="map-opts-icon" alt="icon" />
             </div>
-            琉璃袋
+            Violet Grass
           </span>
           <span class="Layer_DXQQR_MD map-opts" area="MD" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_30.png" class="map-opts-icon" alt="icon" />
             </div>
-            大型丘丘人-蒙德
+            Wooden Mitachurl
           </span>
           <span class="Layer_SLM_LY map-opts" area="LY" itemtype="GW">
             <div class="img-border">
               <img src="imgs/icon_41.png" class="map-opts-icon" alt="icon" />
             </div>
-            史莱姆-璃月
+            Slime
           </span>
           <span class="Layer_QX map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_44.png" class="map-opts-icon" alt="icon" />
             </div>
-            清心
+            Qinxin
           </span>
           <span class="Layer_MW map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_45.png" class="map-opts-icon" alt="icon" />
             </div>
-            马尾
+            Horsetail
           </span>
           <span class="Layer_LP map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_46.png" class="map-opts-icon" alt="icon" />
             </div>
-            莲蓬
+            Lotus
           </span>
           <span class="Layer_XL map-opts" area="LY" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_47.png" class="map-opts-icon" alt="icon" />
             </div>
-            星螺
+            Star Snail
           </span>
           <span class="Layer_XDC map-opts" area="MD" itemtype="TC">
             <div class="img-border">
               <img src="imgs/icon_48.png" class="map-opts-icon" alt="icon" />
             </div>
-            小灯草
+            Small lamp grass
           </span>
           <span class="Layer_BWHHD_MD map-opts" area="MD" itemtype="LJ">
             <div class="img-border">
               <img src="imgs/icon_49.png" class="map-opts-icon" alt="icon" />
             </div>
-            冰雾花花朵-蒙德
+            Mist flower corolla
           </span>
           <!-- <span class="Layer_BWHHD_LY map-opts" area="LY" itemtype="LJ">
 					<div class="img-border"><img src="imgs/icon_50.png" class="map-opts-icon" alt="icon"></div>冰雾花花朵-璃月
@@ -361,7 +363,7 @@
             <div class="img-border">
               <img src="imgs/icon_51.png" class="map-opts-icon" alt="icon" />
             </div>
-            烈焰花花蕊-蒙德
+            Flaming Flower Stamen
           </span>
           <!-- <span class="Layer_LYHHR_LY map-opts" area="LY" itemtype="LJ">
 					<div class="img-border"><img src="imgs/icon_52.png" class="map-opts-icon" alt="icon"></div>烈焰花花蕊-璃月
@@ -370,7 +372,7 @@
             <div class="img-border">
               <img src="imgs/icon_53.png" class="map-opts-icon" alt="icon" />
             </div>
-            电气水晶-蒙德
+            Electro Crystal
           </span>
           <!-- <span class="Layer_DQSJ_LY map-opts" area="LY" itemtype="TX">
 					<div class="img-border"><img src="imgs/icon_54.png" class="map-opts-icon" alt="icon"></div>电气水晶-璃月
@@ -409,7 +411,7 @@
             <div class="img-border">
               <img src="imgs/icon_65.png" class="map-opts-icon" alt="icon" />
             </div>
-            螃蟹-蒙德
+            Crab
           </span>
           <!-- <span class="Layer_PX_LY map-opts" area="LY" itemtype="TX">
 					<div class="img-border"><img src="imgs/icon_66.png" class="map-opts-icon" alt="icon"></div>螃蟹-璃月
@@ -436,7 +438,7 @@
             <div class="img-border">
               <img src="imgs/icon_73.png" class="map-opts-icon" alt="icon" />
             </div>
-            松茸-蒙德
+            Matsutake
           </span>
           <!-- <span class="Layer_SongR_LY map-opts" area="LY" itemtype="TX">
 					<div class="img-border"><img src="imgs/icon_74.png" class="map-opts-icon" alt="icon"></div>松茸-璃月
@@ -445,13 +447,13 @@
             <div class="img-border">
               <img src="imgs/icon_75.png" class="map-opts-icon" alt="icon" />
             </div>
-            兽肉-蒙德
+            Raw Meat
           </span>
           <span class="Layer_ShouR_LY map-opts" area="LY" itemtype="SC">
             <div class="img-border">
               <img src="imgs/icon_76.png" class="map-opts-icon" alt="icon" />
             </div>
-            兽肉-璃月
+            Raw Meat
           </span>
           <!-- <span class="Layer_QR_MD map-opts" area="MD" itemtype="SC">
 					<div class="img-border"><img src="imgs/icon_77.png" class="map-opts-icon" alt="icon"></div>禽肉-蒙德
@@ -516,11 +518,11 @@
         </div>
       </div>
     </div>
-    <div class="bottom-rules">
+    <!-- <div class="bottom-rules">
       <a href="disclaimer.html" target="_bal" class="disclaimer"
         >Disclaimer/Recruitment</a
       >
-    </div>
+    </div> -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="leaflet/leaflet.js"></script>
     <script src="dist/leaflet.markercluster-src.js"></script>
@@ -529,7 +531,7 @@
     <script>
       $(".area-list-li-containor").hide();
       $(".area-list-containor").show();
-      //筛选函数
+      //Filter function
       var i_type = "ALL";
       var area_idx = "MD";
 
@@ -555,7 +557,7 @@
           }
         }
       }
-      //页签和地区选择按钮的样式切换函数
+      //Style switching function for tabs and area selection buttons
       $(".con-type-label").click(function () {
         $(".con-type-label").removeClass("on");
         $(this).addClass("on");
@@ -579,7 +581,7 @@
           filter();
         }
       });
-      //点击筛选项以改变选择器项目
+      //Click the filter item to change the selector item
       $(".options-list .map-opts").click(function () {
         $(".selector-hint").hide();
         if ($(this).hasClass("on") == true) {
@@ -592,7 +594,7 @@
               $(".selector-list-containor p").eq(i).remove();
             }
           }
-          //改变地图标记
+          //Change map marker
           let typeclass = $(this).attr("class");
           let idx = typeclass.indexOf(" ");
           let typetext = typeclass.slice(0, idx);
@@ -616,7 +618,7 @@
               $(".selector-hint").show();
             }
           });
-          //改变地图标记
+          //Change map marker
           let typeclass = $(this).attr("class");
           let idx = typeclass.indexOf(" ");
           let typetext = typeclass.slice(0, idx);
@@ -630,14 +632,14 @@
           }
         });
       });
-      //初始化筛选器功能
+      //Initialize the filter function
       $(document).ready(function () {
         $(".con-type-label:first").trigger("click");
         $(".reg_log_link").click(function () {
-          alert("即将开放,敬请期待！");
+          alert("Opening soon, stay tuned！");
         });
 
-        // 复制的方法
+        // Copy method
         function copyText(text, callback) {
           // text: 要复制的内容， callback: 回调
           var tag = document.createElement("input");
@@ -652,7 +654,7 @@
           }
         }
 
-        //下载保存数据并复制到剪切板
+        //Download and save data and copy to clipboard
         $(".save-btn").click(function () {
           var markedLog = [];
           for (var i = 0; i < 29; i++) {
@@ -684,7 +686,7 @@
           toolresult = JSON.stringify(markedLog1);
           var texts = toolresult;
           copyText(texts, function () {
-            alert("复制成功 \n复制内容" + texts);
+            alert("Copy successfully \ncopy content" + texts);
           });
           console.log(toolresult);
         });
@@ -833,9 +835,9 @@
           $(".fold-btn").css("background-image", "url(imgs/con_img/fold.png)");
         }
       });
-      //防止IOS的缩放函数
+      //Prevent IOS scaling function
       window.onload = function () {
-        // 阻止双击放大
+        // Prevent double-click to zoom in
         var lastTouchEnd = 0;
         document.addEventListener("touchstart", function (event) {
           if (event.touches.length > 1) {
@@ -853,7 +855,7 @@
           },
           false
         );
-        // 阻止双指放大
+        // Prevent pinch zoom
         document.addEventListener("gesturestart", function (event) {
           event.preventDefault();
         });

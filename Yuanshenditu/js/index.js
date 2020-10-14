@@ -7,17 +7,17 @@ var map = L.map("map", {
   zoomSnap: 0.5,
   maxZoom: 8,
   minZoom: 4,
-  zoom: 4,
+  zoom: 5,
   maxBounds: t,
   attributionControl: false,
   zoomControl: false,
 });
-L.control
-  .attribution({
-    prefix:
-      "<a href='https://bbs.mihoyo.com/ys/article/1328298' target='_blank'>Instructions for use</a>",
-  })
-  .addTo(map);
+// L.control
+//   .attribution({
+//     prefix:
+//       "<a href='https://bbs.mihoyo.com/ys/article/1328298' target='_blank'>Instructions for use</a>",
+//   })
+//   .addTo(map);
 L.control
   .zoom({
     zoomInTitle: "+",
@@ -344,7 +344,7 @@ function onEachFeature(feature, layer) {
   // popupHtml += '<div class="myPopPicture">';
   // popupHtml += '<img src=comment_png/' + key + '.jpg onerror="javascript:$(\'.myPopComment,.myPopPicture\').addClass(\'disable\');$(\'.myPopComment\').css({\'cursor\': \'default\'})">';
   // popupHtml += '</div>';
-  // popupHtml += '<div class="' + switchClass + '" onclick="MarkPoint(this)" data-key="' + key + '"><p class="switchOff">未完成</p><p class="switchOn">已完成</p><div class="switchButton"><div class="switchButtonIcon"><p>未完成</p></div></div></div>';
+  // popupHtml += '<div class="' + switchClass + '" onclick="MarkPoint(this)" data-key="' + key + '"><p class="switchOff">unfinished</p><p class="switchOn">completed</p><div class="switchButton"><div class="switchButtonIcon"><p>unfinished</p></div></div></div>';
   // popupHtml += '<div class="tipcard"></div>'
   // popupHtml += '</div>';
   layer.bindPopup();
@@ -506,7 +506,7 @@ function MarkPoint(element) {
     that.addClass("myPopSwitchDone");
     that.removeClass("myPopSwitchTodo");
     setTimeout(function () {
-      that.find(".switchButton p").html("已完成");
+      that.find(".switchButton p").html("completed");
     }, 100);
     setTimeout(function () {
       closePop();
@@ -515,7 +515,7 @@ function MarkPoint(element) {
     that.addClass("myPopSwitchTodo");
     that.removeClass("myPopSwitchDone");
     setTimeout(function () {
-      that.find(".switchButton p").html("未完成");
+      that.find(".switchButton p").html("unfinished");
     }, 100);
   }
 }
@@ -624,11 +624,11 @@ map.on("popupopen", function (e) {
   var key = className.substring(5, className.length);
   var markedFlag = localStorage.getItem(key);
   var switchClass = !markedFlag ? "myPopSwitchTodo" : "myPopSwitchDone";
-  var switchText = !markedFlag ? "未完成" : "已完成";
+  var switchText = !markedFlag ? "unfinished" : "completed";
   popupHtml = `
 	<div class="myPopContainer">
 		<div class="myPopTitle">
-			<div class="myPopName" >${marker.feature.properties.popTitle}${marker.feature.id}</div>
+			<div class="myPopName" >${marker.feature.properties.popTitle} ${marker.feature.id}</div>
 		</div>
 		<div class="myPopLine"></div>
 		<div class="myPopClose" onclick="closePop()"></div>
@@ -639,8 +639,8 @@ map.on("popupopen", function (e) {
 			<img src=comment_png/${key}.jpg onerror="javascript:$(\'.myPopComment,.myPopPicture\').addClass(\'disable\');$(\'.myPopComment\').css({\'cursor\': \'default\'})">
 		</div>
 		<div class="${switchClass}" onclick="MarkPoint(this)" data-key="${key}">
-			<p class="switchOff">未完成</p>
-			<p class="switchOn">已完成</p>
+			<p class="switchOff">unfinished</p>
+			<p class="switchOn">completed</p>
 			<div class="switchButton">
 				<div class="switchButtonIcon">
 					<p>${switchText}</p>
