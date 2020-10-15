@@ -1,5 +1,5 @@
 @font-face {
-  font-family: font;
+  font-family: font, sans-serif;
   src: url(HYWenHei-85W.ttf);
 }
 
@@ -89,7 +89,7 @@ body,
   right: -415px;
   width: 431px;
   height: 912px;
-  font-family: font;
+  font-family: font, sans-serif;
   transform-origin: 0% 0% 0;
   transform: scale(0.75);
   -webkit-transform: scale(0.75);
@@ -434,7 +434,7 @@ body,
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: font;
+  font-family: font, sans-serif;
   text-indent: 10px;
   margin: 0 5px 5px 0;
   cursor: pointer;
@@ -500,7 +500,7 @@ body,
   width: 100%;
   margin: 14px 0 0 0;
   padding: 0 17px;
-  font-family: font;
+  font-family: font, sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 100%;
