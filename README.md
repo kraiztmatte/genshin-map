@@ -1,4 +1,6 @@
-# [Kongying Tavern] Tivat Electronic Map•The latest version
+# Genshin Impact Interactive world map
+
+this map was forked from chinese genshin impact map, currently working on translate stuff.
 
 ## How to use:
 
